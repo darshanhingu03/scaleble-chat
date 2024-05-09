@@ -1,5 +1,6 @@
 import { Server } from "socket.io";
 import Redis from "ioredis";
+import "dotenv/config";
 
 const pub = new Redis({
   host: process.env.REDIS_HOST,
